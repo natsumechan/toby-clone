@@ -1,0 +1,54 @@
+# ==========================
+# Root Git Ignore for Monorepo
+# ==========================
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.history
+.fleet/
+*.swp
+*.swo
+*.iml
+
+# Logs
+logs
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Env files (keep examples)
+.env
+.env.*
+!.env.example
+
+# Node / JS
+node_modules/
+**/node_modules/
+*.tsbuildinfo
+
+# Build outputs / Caches
+dist/
+build/
+out/
+.next/
+.vercel/
+.turbo/
+.cache/
+coverage/
+.vite/
+**/.parcel-cache/
+storybook-static/
+
+# Certificates / misc
+*.pem
+
+# Chrome Extension (vite)
+chrome-ext/dev-dist/
+chrome-ext/.vite/
