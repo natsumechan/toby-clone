@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Toby Clone",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "options_page": "src/options/index.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "tabs", "activeTab", "sidePanel"],
+  "host_permissions": []
+}
